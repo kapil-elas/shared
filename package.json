@@ -9,19 +9,24 @@
         "build": ""
     },
     "dependencies": {
-        "@mui/x-date-pickers": "7.19.0",
-        "@types/d3": "^7.4.3",
-        "@types/d3-org-chart": "^3.1.2",
-        "react-icons": "^5.5.0",
         "@dabeng/react-orgchart": "1.0.3",
         "@emotion/react": "^11.11.1",
         "@emotion/styled": "^11.11.0",
+        "@fullcalendar/core": "^6.1.7",
+        "@fullcalendar/daygrid": "6.1.7",
+        "@fullcalendar/interaction": "6.1.7",
+        "@fullcalendar/react": "6.1.7",
+        "@fullcalendar/timegrid": "6.1.7",
         "@mui/icons-material": "^5.15.0",
         "@mui/material": "^5.15.0",
         "@mui/styles": "^5.15.0",
         "@mui/system": "^5.15.0",
+        "@mui/x-date-pickers": "7.19.0",
         "@mui/x-tree-view": "^8.0.0",
         "@react-spring/web": "9.7.5",
+        "@types/d3": "^7.4.3",
+        "@types/d3-org-chart": "^3.1.2",
+        "chroma-js": "2.4.2",
         "d3-org-chart": "3.1.1",
         "date-fns-tz": "3.2.0",
         "eslint": "^8.57.1",
@@ -31,19 +36,17 @@
         "react": "18.0.0",
         "react-beautiful-dnd": "13.1.1",
         "react-dom": "18.0.0",
+        "react-icons": "^5.5.0",
+        "react-router-dom": "6.11.2",
         "react-scripts": "5.0.1",
         "terser-webpack-plugin": "5.3.14",
-        "yup": "^1.6.1",
-        "@fullcalendar/react": "6.1.7",
-        "react-router-dom": "6.11.2",
-        "@fullcalendar/core": "^6.1.7",
-        "@fullcalendar/daygrid": "6.1.7",
-        "@fullcalendar/interaction": "6.1.7",
-        "@fullcalendar/timegrid": "6.1.7",
-        "chroma-js": "2.4.2"
+        "yup": "^1.6.1"
     },
     "main": "index.js",
     "author": "",
     "license": "ISC",
-    "description": ""
+    "description": "",
+    "devDependencies": {
+        "@babel/preset-react": "^7.27.1"
+    }
 }
