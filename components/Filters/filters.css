@@ -1,0 +1,11 @@
+.MuiOutlinedInput-root {
+    font-size: 13px;
+    height: 36px;
+    padding: 0;
+}
+.MuiOutlinedInput-input {
+    padding: 6px 8px;
+}
+.MuiInputLabel-root {
+    font-size: 13px;
+}

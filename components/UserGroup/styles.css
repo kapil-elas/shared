@@ -1,0 +1,133 @@
+.user-group-container {
+    max-width: 200px;
+    position: relative;
+}
+
+.user-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.user-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+    box-shadow: 0 0 0 1px rgba(9, 30, 66, 0.13);
+    position: relative;
+    z-index: 1;
+    transition: transform 0.2s;
+    cursor: pointer;
+    align-content: center;
+}
+
+.user-avatar:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.user-group .user-avatar:not(:first-child) {
+    margin-left: -8px;
+}
+
+.add-user,
+.view-all {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #f4f5f7;
+    color: #5e6c84;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    cursor: pointer;
+    margin-left: -8px;
+    border: none;
+    transition: background 0.2s;
+    font-size: 12px;
+}
+
+.add-user:hover,
+.view-all:hover {
+    background-color: #ebecf0;
+}
+
+.add-user {
+    color: #42526e;
+    font-weight: bold;
+}
+
+.view-all {
+    background-color: #dfe1e6;
+    color: #42526e;
+    display: none;
+}
+
+.user-group.has-hidden-users .view-all {
+    display: flex;
+}
+.visible {
+    display: block;
+}
+
+.user-list-popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #dfe1e6;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px -2px rgba(9, 30, 66, 0.25), 0 0 1px rgba(9, 30, 66, 0.31);
+    padding: 4px 0;
+    z-index: 100;
+    min-width: 200px;
+    display: block;
+    overflow: auto;
+    height: 200px;
+}
+
+.user-list-popup.visible {
+    display: block;
+}
+
+.user-list-item {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.user-list-item:hover {
+    background-color: #f4f5f7;
+}
+
+.user-list-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+    object-fit: cover;
+}
+
+.user-list-name {
+    font-size: 14px;
+    color: #172b4d;
+}
+
+.user-list-header {
+    font-size: 11px;
+    color: #5e6c84;
+    padding: 8px 12px 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.user-list-divider {
+    height: 1px;
+    background-color: #dfe1e6;
+    margin: 4px 0;
+}

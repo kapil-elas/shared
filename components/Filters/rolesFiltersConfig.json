@@ -1,0 +1,27 @@
+[
+    {
+      "label": "Location",
+      "key": "location",
+      "name": "location",
+      "visible": true,
+      "checked": true,
+      "isMulti": true
+    },
+    {
+      "label": "Department",
+      "key": "department",
+      "name": "department",
+      "visible": false,
+      "checked": false,
+      "isMulti": true
+    },
+    {
+      "label": "Role",
+      "key": "role",
+      "name": "role",
+      "visible": false,
+      "checked": false,
+      "isMulti": true
+    }
+  ]
+  

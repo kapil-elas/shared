@@ -1,0 +1,46 @@
+.list-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start !important;
+    align-content: flex-start !important;
+    flex-direction: row !important;
+    margin: 20px;
+    border: 1px solid #DEE2E6;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff;
+    height: 100%;
+    min-height: calc(100vh - 200px);
+}
+.list-box-header {
+    padding: 5px;
+    width: 100%;
+}
+.list-box-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid #00BF62; */
+    margin: 10px 0;
+    /* border-radius: 8px; */
+    width: 100%;
+    padding: 5px 15px;
+}
+
+.list-box-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.list-item > .MuiAccordionSummary-content{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.accordian {
+    box-shadow: none !important;
+}

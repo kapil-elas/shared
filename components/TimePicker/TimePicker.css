@@ -1,0 +1,12 @@
+.MuiFormControl-root {
+    width: 100%
+}
+
+.MuiMultiSectionDigitalClockSection-item {
+    min-width: 100% !important;
+}
+
+.MuiDataGrid-cell--editing:focus-within {
+    outline: 1px solid lightgrey !important; /* Replace pink with light grey */
+    outline-offset: 0px; /* Align the outline */
+  }
