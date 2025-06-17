@@ -36,6 +36,10 @@
         "yup": "^1.6.1",
         "@fullcalendar/react": "6.1.7",
         "react-router-dom": "6.11.2",
+        "@fullcalendar/core": "^6.1.7",
+        "@fullcalendar/daygrid": "6.1.7",
+        "@fullcalendar/interaction": "6.1.7",
+        "@fullcalendar/timegrid": "6.1.7",
         "chroma-js": "2.4.2"
     },
     "main": "index.js",
