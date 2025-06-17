@@ -1,5 +1,5 @@
 {
-    "name": "@elasapp/shared",
+    "name": "@elas/shared",
     "version": "0.0.4",
     "publishConfig": {
         "access": "public"
