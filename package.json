@@ -33,7 +33,10 @@
         "react-dom": "18.0.0",
         "react-scripts": "5.0.1",
         "terser-webpack-plugin": "5.3.14",
-        "yup": "^1.6.1"
+        "yup": "^1.6.1",
+        "@fullcalendar/react": "6.1.7",
+        "react-router-dom": "6.11.2",
+        "chroma-js": "2.4.2"
     },
     "main": "index.js",
     "author": "",
