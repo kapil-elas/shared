@@ -75,7 +75,7 @@ import MUITabs from "./MUITabs/index";
 import LinkingUnlinkingDialog from "./LinkingUnlinkingDialog/index";
 import DragAndDropSelector from "./DragDropSelector/index";
 import DeleteDialog from "./DeleteDialog/index";
-import Comments from "./Comments/index";
+// import Comments from "./Comments/index";
 import Configurations from "./Configurations/index";
 import ConfigurationsList from "./Configurations/ConfigurationsList";   
 export {
@@ -155,7 +155,7 @@ export {
   LinkingUnlinkingDialog,
   DragAndDropSelector,
   DeleteDialog,
-  Comments,
+  // Comments,
   Configurations,
   ConfigurationsList
 };
