@@ -67,8 +67,8 @@ import GenericSelectionModal from "./Confirmation/GenericSelectionModal";
 import ReusableModalHeader from "./Confirmation/ReusableModalHeader";
 import CommonDataGrid from "./DataGrid";
 import Filters from "./Filters/index";
-import Notifications from "./Notifications";
-import NotificationsList from "./Notifications/notificationsList";
+// import Notifications from "./Notifications";
+// import NotificationsList from "./Notifications/notificationsList";
 import TopSnackbar from "./TopSnackbar";
 import * as StatusBadge from "./StatusBadge";
 import MUITabs from "./MUITabs/index";
@@ -147,8 +147,8 @@ export {
   ReusableModalHeader,
   CommonDataGrid,
   Filters,
-  Notifications,
-  NotificationsList,
+  // Notifications,
+  // NotificationsList,
   TopSnackbar,
   StatusBadge,
   MUITabs,
