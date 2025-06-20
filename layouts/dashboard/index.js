@@ -22,7 +22,7 @@ import Icon from "@mui/material/Icon";
 import DashboardLayout from "./../../components/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "./../../components/Navbars/DashboardNavbar";
 import Footer from "./../../components/Footer";
-import { SoftBox, SoftTypography, Globe, MiniStatisticsCard, SalesTable, ReportsBarChart, GradientLineChart } from "./../../components";
+import { SoftBox, SoftTypography, MiniStatisticsCard, SalesTable, ReportsBarChart, GradientLineChart } from "./../../components";
 
 // Soft UI Dashboard PRO React base styles
 import typography from "./../../assets/theme/base/typography";

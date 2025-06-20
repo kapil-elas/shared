@@ -23,7 +23,7 @@ import SoftTagInput from "./SoftTagInput";
 import SoftTypography from "./SoftTypography";
 import FormField from "./FormField";
 import DataTable from "./Tables/DataTable";
-import Globe from "./Globe";
+// import Globe from "./Globe";
 import MiniStatisticsCard from "./Cards/StatisticsCards/MiniStatisticsCard";
 import SalesTable from "./Tables/SalesTable";
 import ReportsBarChart from "./Charts/BarCharts/ReportsBarChart";
@@ -104,7 +104,7 @@ export {
   SoftTypography,
   FormField,
   DataTable,
-  Globe,
+//   Globe,
   MiniStatisticsCard,
   SalesTable,
   ReportsBarChart,
