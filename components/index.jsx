@@ -67,15 +67,15 @@ import GenericSelectionModal from "./Confirmation/GenericSelectionModal";
 import ReusableModalHeader from "./Confirmation/ReusableModalHeader";
 import CommonDataGrid from "./DataGrid";
 import Filters from "./Filters/index";
-// import Notifications from "./Notifications";
-// import NotificationsList from "./Notifications/notificationsList";
+import Notifications from "./Notifications";
+import NotificationsList from "./Notifications/notificationsList";
 import TopSnackbar from "./TopSnackbar";
 import * as StatusBadge from "./StatusBadge";
 import MUITabs from "./MUITabs/index";
 import LinkingUnlinkingDialog from "./LinkingUnlinkingDialog/index";
 import DragAndDropSelector from "./DragDropSelector/index";
 import DeleteDialog from "./DeleteDialog/index";
-// import Comments from "./Comments/index";
+import Comments from "./Comments/index";
 import Configurations from "./Configurations/index";
 import ConfigurationsList from "./Configurations/ConfigurationsList";   
 export {
@@ -147,15 +147,15 @@ export {
   ReusableModalHeader,
   CommonDataGrid,
   Filters,
-  // Notifications,
-  // NotificationsList,
+  Notifications,
+  NotificationsList,
   TopSnackbar,
   StatusBadge,
   MUITabs,
   LinkingUnlinkingDialog,
   DragAndDropSelector,
   DeleteDialog,
-  // Comments,
+  Comments,
   Configurations,
   ConfigurationsList
 };
