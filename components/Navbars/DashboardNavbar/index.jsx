@@ -27,6 +27,7 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import Icon from "@mui/material/Icon";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 
 // Soft UI Dashboard React components
 import SoftBox from "./../../SoftBox";
@@ -38,7 +39,7 @@ import NotificationItem from "./../../Items/NotificationItem";
 
 // Custom styles for DashboardNavbar
 import { navbar, navbarContainer, navbarRow, navbarIconButton, navbarMobileMenu } from "./styles";
-
+import { aiIconLogo } from "@elas/shared/assets/images";
 // Soft UI Dashboard React context
 import {
   useSoftUIController,
@@ -55,9 +56,22 @@ import logoSpotify from "./../../../assets/images/small-logos/logo-spotify.svg";
 import AvatarDropdown from "./../../AvatarDropdown";
 import SoftTypography from "./../../../components/SoftTypography";
 import colors from "./../../../assets/theme/base/colors";
-import { Popover } from "@mui/material";
+import { Button, Popover, Typography } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
-function DashboardNavbar({ absolute, light, isMini, logout, username, brand, fixedNavbarStatus, notification, configurations, roles, actions }) {
+function DashboardNavbar({
+  absolute,
+  light,
+  isMini,
+  logout,
+  username,
+  brand,
+  fixedNavbarStatus,
+  notification,
+  configurations,
+  roles,
+  actions,
+}) {
   const [navbarType, setNavbarType] = useState();
   const [controller, dispatch] = useSoftUIController();
   const { miniSidenav, transparentNavbar, fixedNavbar, openConfigurator } = controller;
@@ -65,10 +79,11 @@ function DashboardNavbar({ absolute, light, isMini, logout, username, brand, fix
   const route = useLocation().pathname.split("/").slice(1);
   const [isOpen, setIsOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false); // State to track search bar toggle
+  const navigate = useNavigate();
   const location = useLocation();
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
-  }  
+  };
   // Navbar type and transparency effect
   useEffect(() => {
     if (fixedNavbar) {
@@ -93,12 +108,11 @@ function DashboardNavbar({ absolute, light, isMini, logout, username, brand, fix
       location.pathname === "/timesheet/current" ||
       location.pathname === "/timesheet/approval" ||
       location.pathname === "/timesheet/history" ||
-      location.pathname === "/location" || 
+      location.pathname === "/location" ||
       // location.pathname === "/roles-management" ||
       location.pathname === "/roles-management" ||
       location.pathname === "/departments-positions" ||
       location.pathname === "/department-positions"
-      
     ) {
       setMiniSidenav(dispatch, true); // Collapse sidenav
     } else {
@@ -115,7 +129,7 @@ function DashboardNavbar({ absolute, light, isMini, logout, username, brand, fix
       location.pathname === "/location" ||
       location.pathname === "/roles-management" ||
       location.pathname === "/departments-positions" ||
-      location.pathname === "/role-management" || 
+      location.pathname === "/role-management" ||
       location.pathname === "/department-positions"
     ) {
       setMiniSidenav(dispatch, !miniSidenav); // Toggle only on `/timesheet/current`
@@ -207,13 +221,35 @@ function DashboardNavbar({ absolute, light, isMini, logout, username, brand, fix
             >
               <Icon>{miniSidenav ? "menu_open" : "menu"}</Icon>
             </IconButton>
-            <SoftBox textAlign="center" style={{ display: "flex", justifyContent: "center", cursor: "pointer" }}>
+            <SoftBox
+              textAlign="center"
+              style={{ display: "flex", justifyContent: "center", cursor: "pointer" }}
+            >
               {brand && <img src={brand} alt="brand" width="60%" />}
             </SoftBox>
             <Breadcrumbs icon="home" title={route[route.length - 1]} route={route} light={light} />
           </SoftBox>
           {isMini ? null : (
             <SoftBox sx={(theme) => navbarRow(theme, { isMini })}>
+              <SoftBox
+                component="button"
+                onClick={() => navigate("/artie/chat")}
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  background: "none",
+                  border: 0,
+                  cursor: "pointer",
+                  mr: 2,
+                  p: 0,
+                }}
+              >
+                <Button startIcon={<AutoAwesomeIcon />}></Button>
+                {/* <Typography variant="h6"><img src={aiIconLogo} alt="brand" width="50%" /></Typography> */}
+                <SoftTypography variant="button" fontWeight="bold" color="info">
+                  Artie
+                </SoftTypography>
+              </SoftBox>
               <SoftBox pr={1}>
                 {/* Wrapper with a width transition */}
                 <SoftBox
@@ -241,17 +277,17 @@ function DashboardNavbar({ absolute, light, isMini, logout, username, brand, fix
                 </SoftBox>
               </SoftBox>
               {notification()}
-              <SoftBox pr={1}>
-                {configurations()}
-              </SoftBox>
-              <SoftBox color={light ? "white" : "inherit"} >
-                <AvatarDropdown actions={actions}  />
+              <SoftBox pr={1}>{configurations()}</SoftBox>
+              <SoftBox color={light ? "white" : "inherit"}>
+                <AvatarDropdown actions={actions} />
                 {/* Render the hamburger icon only when the URL is `/timesheet/current` */}
 
                 {/* {renderMenu()} */}
               </SoftBox>
               <SoftBox pr={1}>
-                <SoftTypography style={{fontSize:'14px', fontWeight:600}}>{username}</SoftTypography>
+                <SoftTypography style={{ fontSize: "14px", fontWeight: 600 }}>
+                  {username}
+                </SoftTypography>
                 {/* <SoftTypography variant="h6">{roles?.join(', ')}</SoftTypography> */}
               </SoftBox>
             </SoftBox>

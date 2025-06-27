@@ -14,6 +14,11 @@ export const dropdownOptions = {
   phoneTypeOption: [] as StateOption[],
   prefixOptions: [] as StateOption[],
   organization: [] as StateOption[],
+  businessTypes: [] as StateOption[],
+  teamSizes: [] as StateOption[],
+  locations: [] as StateOption[],
+  coreServices: [] as StateOption[],
+  painPoints: [] as StateOption[],
 };
 
 export const checkboxOptions = {
