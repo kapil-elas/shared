@@ -310,7 +310,7 @@ DashboardNavbar.propTypes = {
   notification: PropTypes.func,
   configurations: PropTypes.func,
   roles: PropTypes.arrayOf(PropTypes.string),
-  actions: PropTypes.object,
+  actions: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default DashboardNavbar;
