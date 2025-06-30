@@ -7,6 +7,11 @@ const statusColorAndName = {
     textColor: "black",
     name: "Submitted",
   },
+  RESUBMITTED: {
+    color: "#efef0082",
+    textColor: "black",
+    name: "Resubmitted",
+  },
   NEW: {
     color: "#4d4343a1",
     textColor: "white",
