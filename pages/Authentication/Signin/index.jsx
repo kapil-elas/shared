@@ -26,7 +26,7 @@
  import { validateEmail } from "@elas/shared/utils/helpers";
  import { SNACKBAR_TIMEOUT } from "@elas/shared/utils/config";
  import { logout } from "@elas/redux/session/action";
- import { aiIconLogo } from "../../../assets/images";
+ import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
  import { Button } from "@mui/material";
  // import { updateSnackbarOptions, resetSnackbarOptions } from "store/snackbarSlice";
  // import { resetAuthState } from "store/authSlice";
