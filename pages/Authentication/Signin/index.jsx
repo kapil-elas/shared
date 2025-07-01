@@ -104,26 +104,22 @@
                {!header ? (
                  <>
                    <SoftBox
-                     sx={{
-                       position: "absolute",
-                       top: "2rem", // nudged down a bit
-                       left: "2rem", // nudged in from the left
-                       zIndex: 20, // atop the skewed panel
-                       display: "flex",
-                       alignItems: "center",
-                       cursor: "pointer",
-                     }}
-                     onClick={() => navigate("/artie/chat")}
-                   >
-                     <SoftBox
-                       component="img"
-                       src={aiIconLogo}
-                       alt="AI Logo"
-                       sx={{ width: "3rem", height: "3rem", mr: 1 }} // larger logo
-                     />
-                     <SoftTypography variant="h3" fontWeight="bold" color="info">
-                       Powered by Artie
-                     </SoftTypography>
+                        component="button"
+                        onClick={() => navigate("/artie/chat")}
+                        sx={{
+                            position: "absolute",
+                            top: "2rem", // nudged down a bit
+                            left: "2rem", // nudged in from the left
+                            zIndex: 20, // atop the skewed panel
+                            display: "flex",
+                            alignItems: "center",
+                            cursor: "pointer",
+                        }}
+                        >
+                        <Button sx={{ width: "2rem", height: "2rem", mr: 1 }} startIcon={<AutoAwesomeIcon />}></Button>
+                        <SoftTypography variant="h3" fontWeight="bold" color="info" textGradient>
+                           Powered by Artie
+                        </SoftTypography>
                    </SoftBox>
  
                    <SoftBox mb={1}>
