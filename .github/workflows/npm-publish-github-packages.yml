@@ -14,15 +14,14 @@ jobs:
         with:
           node-version: 20
       - run: npm ci --legacy-peer-deps
-      # - run: npm test
 
   publish-gpr:
     needs: build
-    if: github.ref == 'refs/heads/main' # ✅ Only publish on main branch
+    if: github.ref == 'refs/heads/main' # Only publish on main
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      packages: write
+      packages: write # Required for GitHub Packages
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
